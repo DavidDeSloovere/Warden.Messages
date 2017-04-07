@@ -1,11 +1,7 @@
-﻿using System;
-using Warden.Messages.Commands;
-
 namespace Warden.Messages.Commands.Spawn
 {
-    public class RunWardenProcess : ICommand
+    public class ReconfigureWarden : SpawnWardenBase
     {
-        public Request Request { get; set; }
         public string ConfigurationId { get; set; }
         public string Token { get; set; }
     }
